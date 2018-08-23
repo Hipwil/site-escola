@@ -1,0 +1,427 @@
+/* Começo Menu */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+	background: #104e8b;
+	font-size:22px;
+	line-height: 32px;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	word-wrap:break-word !important;
+	font-family: 'Open Sans', sans-serif;
+	}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+}	
+
+h3 {
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #3a3a3a;
+}
+
+h3 a {
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+}
+
+h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	line-height: 70px;
+	font-family: 'Bree Serif', 'serif';
+	}
+
+#container {
+	margin: 0 auto;
+	max-width: 890px;
+}
+
+p {
+	text-align: center;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: #222;
+	transition: all .8s;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+	color: yellow;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	background-color: #222;
+	transition: all .8s;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Final Menu */
+
+/*Começo Menu Login*/
+
+#login{
+	background-color:#4267b2;
+	width: 380px;
+	height: 260px;
+	margin: 140px auto 0px;
+	border-radius: 5px;
+
+}
+
+#login-interno{
+	width: 360px;
+	height: 240px;
+	background-color: #fdfff;
+	position: absolute;
+	margin: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px black;
+	overflow: hidden;
+}
+
+#login-label{
+	
+	height: 30px;
+	text-align: center;
+	font: bold 14px/45px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px; 
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	border-bottom: 1px solid #bfc3c5;
+	box-shadow: 1px 0px 3px black;
+	color: 555555;
+	text-shadow: 1px 0px 1px white;
+}
+
+.input-div{
+	margin: 20px;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.input-div input{
+	width: 310px;
+	height: 35px;
+	text-align: center;
+	font: normal 13px 'arial';
+	border-radius: 3px;
+	border: 1px solid;
+	outline: none;
+}
+
+.input-div:hover{
+	background-color: #e0f1fc;
+}
+
+.input-div:hover input{
+	border-color: #7dc6dd;
+}
+
+#input-senha{
+	margin-top: -10px;
+}
+
+#botoes{
+	width: 310px;
+	margin-left: 25px;
+}
+
+#botao{
+	font-size: 20px;
+	font-family: 'Times New Roman';
+	float: right;
+	padding: 1px 2px;
+	font: bold 5px;
+	border-radius: 20px;
+	border: 1px solid #9eb9c3;
+	background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(113,173,222,1) 62%, rgba(121,181,229,0.7) 68%, rgba(125,185,232,0.63) 71%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(113,173,222,1) 62%,rgba(121,181,229,0.7) 68%,rgba(125,185,232,0.63) 71%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(113,173,222,1) 62%,rgba(121,181,229,0.7) 68%,rgba(125,185,232,0.63) 71%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+#botao:hover{
+	background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(125,185,232,1) 57%, rgba(125,185,232,1) 62%, rgba(125,185,232,0.7) 68%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,1) 57%,rgba(125,185,232,1) 62%,rgba(125,185,232,0.7) 68%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,1) 57%,rgba(125,185,232,1) 62%,rgba(125,185,232,0.7) 68%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+#lembrar-senha{
+	font: normal 12px;
+}
+
+/*Final Menu Login*/
+
+/*Começo do Conteudo*/
+
+.endereco{
+	font-family: 'arial';
+	text-align:center;
+	height: 400px;
+	color: #3a3a3a;
+}
+
+.redes{
+	font-family: 'arial';
+	text-align:center;
+	height: 400px;
+	color: #3a3a3a;
+}
+
+
+/*Final do Conteudo*/
+
+/*simbulo*/
+#sim{
+	height: 50px;
+	width: 50px;
+}
+/*simbulo*/
+
+/*Começo Customização*/
+.customizacao{
+  padding: 0 20px;
+  margin: 6em 3% 19em 3%;
+  background: #fff;
+  color: #333;
+  font: 1.156em/1.3 Gill Sans MT, Gill Sans, My Gill Sans, sans-serif;
+  position: relative;
+  box-shadow: 0 .3em 1em #000;
+  background-color: #bcbcbc;
+  border-radius: 37px;
+}
+/*Final Customização*/
+
+/*Assinatura Começo*/
+.ass{
+	text-align: center;
+	background-color: #222;
+	color: white;
+	font-size: 15px;
+	border-top-right-radius:30px;
+	border-top-left-radius: 30px;
+	height: 100px;
+	margin: 0;
+}
+/*Assinatura Final */
+
+
+@media all and (max-width : 768px) {
+	/*Começo Menu*/
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		background-color: #222;
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+		transition: all.8s;
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #222; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+	/*Final Menu*/
+}
+
+@media all and (max-width : 330px) {
+	/*Começo Menu*/
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+	/*Final Menu*/
+}
